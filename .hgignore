@@ -1,0 +1,11 @@
+syntax: glob
+
+O.*
+bin/
+db/*
+dbd/*
+envPaths
+as/req/
+as/save/
+records.dbl
+*.sw?

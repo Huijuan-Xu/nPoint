@@ -1,0 +1,9 @@
+#MRES should be set to 1 / (1048574 / axis range) e.g. for 100um range MRES=0.000095368
+file "$(MOTOR)/db/asyn_motor.db"
+{
+pattern
+{P,              M,      DTYP         PORT,  ADDR,    DESC,     EGU, DIR,  VELO,  VBAS,  ACCL,  BDST,  BVEL,  BACC,  MRES,          PREC,  DHLM,  DLLM,  INIT, RTRY}
+{XF:05IDD-ES:1, "{nKB:Smpl-Ax:ssx}Mtr",  "asynMotor",  LC400,  1,      "Smpl Scaner X",  um,  Pos,  1,     .1,    .5,    0,     1,     .2,    0.000095368,     5,     55,   -55,  "",      0}
+{XF:05IDD-ES:1, "{nKB:Smpl-Ax:ssy}Mtr",  "asynMotor",  LC400,  2,      "Smpl Scaner Y",  um,  Pos,  1,     .1,    .5,    0,     1,     .2,    0.000095368,     5,     55,   -55,  "",      0}
+{XF:05IDD-ES:1, "{nKB:Smpl-Ax:ssz}Mtr",  "asynMotor",  LC400,  0,      "Smpl Scaner Z",  um,  Pos,  1,     .1,    .5,    0,     1,     .2,    0.000095368,     5,     55,   -55,  "",      0}
+}

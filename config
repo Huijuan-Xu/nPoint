@@ -1,0 +1,4 @@
+NAME=nPoint
+PORT=4005
+HOST=xf05idd-ioc-nkb
+USER=softioc
